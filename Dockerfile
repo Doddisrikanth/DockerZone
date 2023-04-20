@@ -9,3 +9,4 @@ FROM tomcat:9-jdk8
 LABEL author="khaja" organization="qt"
 COPY --from=builder /game-of-life/gameoflife-web/target/*.war /usr/local/tomcat/webapps/gameoflife.war
 EXPOSE 8080
+EXPOSE 8081
